@@ -8,7 +8,6 @@
   font-size: var(--main-font-size);
   background-color: var(--background-color);
   background-image: var(--background-image);
-  background-repeat: no-repeat;
   background-attachment: fixed;
   min-inline-size: 320px;
   min-block-size: 100dvb;
@@ -79,7 +78,7 @@
   background-blend-mode: hard-light;
 }
 
-/* @supports (
+@supports (
   (text-stroke: 1px var(--main-color)) or
     (-webkit-text-stroke: 1px var(--main-color))
 ) {
@@ -88,7 +87,7 @@
     -webkit-text-stroke: 1px var(--main-color);
     text-stroke: 1px var(--main-color);
   }
-} */
+}
 
 .card__image {
   object-fit: cover;
@@ -253,14 +252,14 @@
 }
 
 .card__like-button:hover::before,
-.content__button-save:hover::before,
-.content__dialog-close:hover::before {
+.content__save-button:hover::before,
+.content__dialog-button:hover::before {
   transform: scaleX(1);
 }
 
 .card__like-button:focus,
-.content__button-save:focus,
-.content__dialog-close:focus {
+.content__save-button:focus,
+.content__dialog-button:focus {
   box-shadow: 2px 2px 0 var(--accent-color);
   outline: none;
   transition: box-shadow 0.3s ease;
