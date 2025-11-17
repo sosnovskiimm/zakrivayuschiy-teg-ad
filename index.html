@@ -477,7 +477,6 @@
       <button
         class="content__save-button"
         onclick="window['save-dialog'].showModal()"
-        type="button"
       >
         <svg
           class="content__save-button-floppy"
@@ -505,15 +504,12 @@
           </svg>
           <p class="content__dialog-text">Вставьте дискету, чтобы продолжить</p>
         </div>
-        <form method="dialog">
-          <button
-            class="content__dialog-button"
-            onclick="window['save-dialog'].close()"
-            type="submit"
-          >
-            <span class="button__text">ОК</span>
-          </button>
-        </form>
+        <button
+          class="content__dialog-button"
+          onclick="window['save-dialog'].close()"
+        >
+          <span class="button__text">ОК</span>
+        </button>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>
