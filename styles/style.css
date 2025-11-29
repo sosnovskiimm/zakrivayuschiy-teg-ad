@@ -270,17 +270,17 @@
     --content-width: 100%;
   }
 
-  .content__button-save {
+  .content__save-button {
     flex-direction: column;
     block-size: 80px;
   }
 
-  .content__button-floppy {
+  .content__save-button-floppy {
     inline-size: 28px;
     block-size: 28px;
   }
 
-  .content__dialog-close {
+  .content__dialog-button {
     inline-size: 250px;
   }
 }
